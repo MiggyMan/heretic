@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name dw_symbols)(type Legacy)(uri ${KIPRJMOD}/dw-kicad-lib-master/dw_symbols.lib)(options "")(descr ""))
+)
