@@ -2,6 +2,8 @@
 
 My take on the infidel sensor
 
+Forked from https://github.com/drspangle/infidel-sensor
+
 # Original readme below
 
 # Inline Filament Diameter Estimator, Lowcost (InFiDEL)

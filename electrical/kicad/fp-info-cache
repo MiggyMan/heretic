@@ -1,4 +1,4 @@
-19192464573517946
+19177939164836261
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83460,66 +83460,3 @@ varistor SIOV
 0
 2
 2
-filaSens
-1X06
-<b>PIN HEADER</b>
-
-0
-6
-6
-filaSens
-3,0-PAD
-<b>MOUNTING PAD</b> 3.0 mm, round
-
-0
-1
-1
-filaSens
-C0402
-<b>CAPACITOR</b>
-
-0
-2
-2
-filaSens
-LEDC1608X35N_FLAT-Y
-Chip LED, 1.60 X 0.80 X 0.35 mm body
- <p>Chip LED package with body size 1.60 X 0.80 X 0.35 mm</p>
-0
-0
-2
-2
-filaSens
-MA03-2
-<b>PIN HEADER</b>
-0
-0
-6
-6
-filaSens
-R0402
-<b>Chip RESISTOR 0402 EIA (1005 Metric)</b>
-0
-0
-2
-2
-filaSens
-SIP3-UA
-<b>Type: 3-pin SIP, conventional leadframe</b><p>
-0
-0
-0
-3
-3
-filaSens
-SOIC8
-0
-0
-0
-8
-8
-filaSens
-TACTILE_SWITCH_SMD_6.2MM_TALL
-0
-0
-0
