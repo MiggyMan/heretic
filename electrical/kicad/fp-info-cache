@@ -1,4 +1,4 @@
-19177939164836261
+19179554901851261
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -48936,6 +48936,13 @@ GAS SENSORS - MQ-3, MQ-4, MQ-6, MQ-7, MQ-8
 0
 6
 6
+Custom
+PinHeader_2x02_P2.54mm_Vertical_castelation
+Through hole straight pin header, 2x02, 2.54mm pitch, double rows
+Through hole pin header THT 2x02 2.54mm double row
+0
+8
+2
 Custom
 Pin_Header_Straight_1x02_Pitch1.27mm_castelation
 Through hole straight pin header, 1x02, 1.27mm pitch, single row

@@ -69,7 +69,7 @@ U 1 1 6039E5CF
 P 9036 3968
 F 0 "R5" V 8848 3968 39  0000 C TNN
 F 1 "4K7" V 8931 3968 39  0000 C TNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" H 9036 3968 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 9036 3968 50  0001 C CNN
 F 3 "~" H 9036 3968 50  0001 C CNN
 F 4 "C25900" V 9036 3968 50  0001 C CNN "LCSC"
 	1    9036 3968
@@ -111,11 +111,7 @@ F 4 "C25926" V 7292 3889 50  0001 C CNN "LCSC"
 	1    7292 3889
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8904 3968 8936 3968
-Wire Wire Line
-	9136 3968 9202 3968
-Text Label 9202 3968 0    39   ~ 0
+Text Label 9289 3968 2    39   ~ 0
 IN
 Wire Wire Line
 	6901 3889 7037 3889
@@ -142,17 +138,6 @@ Wire Wire Line
 	8554 4318 8554 4392
 Wire Wire Line
 	7037 4168 7037 4264
-$Comp
-L dw_symbols:SS49X U3
-U 1 1 60387741
-P 8554 3968
-F 0 "U3" H 8554 4219 50  0000 C CNN
-F 1 "SS49X" H 8554 4154 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92Flat" H 8554 3768 50  0001 C CNN
-F 3 "" H 8554 3968 50  0001 C CNN
-	1    8554 3968
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	6767 4264 7037 4264
 Connection ~ 7037 4264
@@ -217,99 +202,64 @@ $EndComp
 $Comp
 L Device:C_Small C2
 U 1 1 60434D62
-P 4018 4944
-F 0 "C2" H 4110 4982 39  0000 L CNN
-F 1 "10uF" H 4110 4907 39  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4018 4944 50  0001 C CNN
-F 3 "~" H 4018 4944 50  0001 C CNN
-F 4 "C19702" H 4018 4944 50  0001 C CNN "LCSC"
-	1    4018 4944
+P 4495 4454
+F 0 "C2" H 4587 4492 39  0000 L CNN
+F 1 "10uF" H 4587 4417 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4495 4454 50  0001 C CNN
+F 3 "~" H 4495 4454 50  0001 C CNN
+F 4 "C19702" H 4495 4454 50  0001 C CNN "LCSC"
+	1    4495 4454
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x06 J1
+L Connector_Generic:Conn_01x03 J1
 U 1 1 604356AB
-P 4536 5094
-F 0 "J1" H 4616 5086 50  0000 L CNN
-F 1 "OUTPUT" H 4616 4995 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 4536 5094 50  0001 C CNN
-F 3 "~" H 4536 5094 50  0001 C CNN
-	1    4536 5094
+P 4534 5056
+F 0 "J1" H 4614 5048 50  0000 L CNN
+F 1 "I2C" H 4614 4957 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4534 5056 50  0001 C CNN
+F 3 "~" H 4534 5056 50  0001 C CNN
+	1    4534 5056
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4336 5394 4136 5394
-Text Label 4136 5394 0    39   ~ 0
-FAULT
+	4342 5577 4142 5577
+Text Label 4142 5577 0    39   ~ 0
+TX
 Wire Wire Line
-	4336 5294 4136 5294
-Text Label 4136 5294 0    39   ~ 0
-OUT
+	4342 5477 4142 5477
+Text Label 4142 5477 0    39   ~ 0
+RX
 Wire Wire Line
-	4336 5194 4136 5194
-Text Label 4136 5194 0    39   ~ 0
+	4334 5156 4134 5156
+Text Label 4134 5156 0    39   ~ 0
 SDA
 Wire Wire Line
-	4336 5094 4136 5094
-Text Label 4136 5094 0    39   ~ 0
+	4334 5056 4134 5056
+Text Label 4134 5056 0    39   ~ 0
 SCL
 Wire Wire Line
-	4336 4994 4095 4994
+	4813 4504 4572 4504
 Wire Wire Line
-	4095 4994 4095 5044
+	4572 4504 4572 4554
 Wire Wire Line
-	4095 5044 4018 5044
+	4572 4554 4495 4554
 Wire Wire Line
-	4336 4894 4095 4894
+	4813 4404 4572 4404
 Wire Wire Line
-	4095 4894 4095 4844
+	4572 4404 4572 4354
 Wire Wire Line
-	4095 4844 4018 4844
-Text Label 4018 4728 3    39   ~ 0
+	4572 4354 4495 4354
+Text Label 4495 4238 3    39   ~ 0
 +5v
 Wire Wire Line
-	4018 4728 4018 4844
-Connection ~ 4018 4844
-Text Label 4018 5160 1    39   ~ 0
+	4495 4238 4495 4354
+Connection ~ 4495 4354
+Text Label 4495 4670 1    39   ~ 0
 GND
 Wire Wire Line
-	4018 5160 4018 5044
-Connection ~ 4018 5044
-$Comp
-L Connector_Generic:Conn_01x06 J2
-U 1 1 60459952
-P 5399 5119
-F 0 "J2" H 5479 5111 50  0000 L CNN
-F 1 "OUTPUT" H 5479 5020 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5399 5119 50  0001 C CNN
-F 3 "~" H 5399 5119 50  0001 C CNN
-	1    5399 5119
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5199 5419 4999 5419
-Text Label 4999 5419 0    39   ~ 0
-FAULT
-Wire Wire Line
-	5199 5319 4999 5319
-Text Label 4999 5319 0    39   ~ 0
-OUT
-Wire Wire Line
-	5199 5219 4999 5219
-Text Label 4999 5219 0    39   ~ 0
-SDA
-Wire Wire Line
-	5199 5119 4999 5119
-Text Label 4999 5119 0    39   ~ 0
-SCL
-Wire Wire Line
-	5199 5019 4999 5019
-Text Label 4999 5019 0    39   ~ 0
-GND
-Wire Wire Line
-	5199 4919 4999 4919
-Text Label 4999 4919 0    39   ~ 0
-+5v
+	4495 4670 4495 4554
+Connection ~ 4495 4554
 Text Label 7539 3657 2    39   ~ 0
 OUT
 $Comp
@@ -451,10 +401,10 @@ F 4 "C127509" H 3490 3754 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3163 3554 3490 3554
+	3163 3554 3380 3554
 Wire Wire Line
-	3490 3954 3490 4154
-Text Label 3490 4154 1    39   ~ 0
+	3380 3786 3380 3986
+Text Label 3380 3986 1    39   ~ 0
 +5v
 Wire Wire Line
 	3163 3454 4003 3454
@@ -517,38 +467,6 @@ Wire Wire Line
 	3163 2354 3363 2354
 Wire Wire Line
 	3363 2354 3363 2200
-$Comp
-L Device:Resonator_Small Y1
-U 1 1 604A9451
-P 3666 3254
-F 0 "Y1" V 3991 3204 50  0000 C CNN
-F 1 "AEL ZTT MT 8Mhz" V 3900 3204 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3641 3254 50  0001 C CNN
-F 3 "~" H 3641 3254 50  0001 C CNN
-	1    3666 3254
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3163 3354 3566 3354
-Wire Wire Line
-	3163 3254 3370 3254
-Wire Wire Line
-	3370 3254 3370 3154
-Wire Wire Line
-	3370 3154 3566 3154
-Wire Wire Line
-	3866 3254 3928 3254
-$Comp
-L power:GND #PWR0105
-U 1 1 604B0ED1
-P 3928 3254
-F 0 "#PWR0105" H 3928 3004 50  0001 C CNN
-F 1 "GND" H 3933 3081 50  0000 C CNN
-F 2 "" H 3928 3254 50  0001 C CNN
-F 3 "" H 3928 3254 50  0001 C CNN
-	1    3928 3254
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	3163 2554 3363 2554
 Text Label 3363 2554 2    39   ~ 0
@@ -581,4 +499,110 @@ Wire Wire Line
 	7674 2251 7474 2251
 Text Label 7474 2251 0    39   ~ 0
 MEM
+Wire Wire Line
+	3163 3254 3363 3254
+Text Label 3363 3254 2    39   ~ 0
+TX
+Wire Wire Line
+	3163 3354 3363 3354
+Text Label 3363 3354 2    39   ~ 0
+RX
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 6054F3D7
+P 5257 5077
+F 0 "J4" H 5337 5119 50  0000 L CNN
+F 1 "OUT" H 5337 5028 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5257 5077 50  0001 C CNN
+F 3 "~" H 5257 5077 50  0001 C CNN
+	1    5257 5077
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 60550884
+P 5013 4504
+F 0 "J2" H 4931 4179 50  0000 C CNN
+F 1 "POWER" H 4931 4270 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5013 4504 50  0001 C CNN
+F 3 "~" H 5013 4504 50  0001 C CNN
+	1    5013 4504
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4334 4956 4134 4956
+Text Label 4134 4956 0    39   ~ 0
+GND
+Text Label 4857 5077 0    39   ~ 0
+OUT
+Wire Wire Line
+	5057 5077 4857 5077
+Text Label 4857 5177 0    39   ~ 0
+FAULT
+Wire Wire Line
+	5057 5177 4857 5177
+Wire Wire Line
+	5057 4977 4857 4977
+Text Label 4857 4977 0    39   ~ 0
+GND
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 6057335C
+P 4542 5477
+F 0 "J5" H 4622 5469 50  0000 L CNN
+F 1 "SERIAL" H 4622 5378 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4542 5477 50  0001 C CNN
+F 3 "~" H 4542 5477 50  0001 C CNN
+	1    4542 5477
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4342 5377 4142 5377
+Text Label 4142 5377 0    39   ~ 0
+GND
+Wire Wire Line
+	3380 3554 3380 3586
+$Comp
+L Device:R_Small R7
+U 1 1 605DE111
+P 3380 3686
+F 0 "R7" V 3192 3686 39  0000 C TNN
+F 1 "10k" V 3275 3686 39  0000 C TNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" H 3380 3686 50  0001 C CNN
+F 3 "~" H 3380 3686 50  0001 C CNN
+F 4 "C25900" V 3380 3686 50  0001 C CNN "LCSC"
+	1    3380 3686
+	1    0    0    1   
+$EndComp
+Connection ~ 3380 3554
+Wire Wire Line
+	3380 3554 3490 3554
+Wire Wire Line
+	3490 3954 3490 4064
+$Comp
+L power:GND #PWR0105
+U 1 1 605EB0DE
+P 3490 4064
+F 0 "#PWR0105" H 3490 3814 50  0001 C CNN
+F 1 "GND" H 3495 3891 50  0000 C CNN
+F 2 "" H 3490 4064 50  0001 C CNN
+F 3 "" H 3490 4064 50  0001 C CNN
+	1    3490 4064
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9136 3968 9289 3968
+$Comp
+L dw_symbols:SS49X U3
+U 1 1 60387741
+P 8554 3968
+F 0 "U3" H 8554 4219 50  0000 C CNN
+F 1 "SS49X" H 8554 4154 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92Flat" H 8554 3768 50  0001 C CNN
+F 3 "" H 8554 3968 50  0001 C CNN
+	1    8554 3968
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8904 3968 8936 3968
 $EndSCHEMATC
