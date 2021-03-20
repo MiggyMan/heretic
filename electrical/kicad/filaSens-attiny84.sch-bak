@@ -111,8 +111,6 @@ F 4 "C25926" V 7292 3889 50  0001 C CNN "LCSC"
 	1    7292 3889
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8904 3968 8912 3968
 Text Label 9289 3968 2    39   ~ 0
 IN
 Wire Wire Line
@@ -140,17 +138,6 @@ Wire Wire Line
 	8554 4318 8554 4392
 Wire Wire Line
 	7037 4168 7037 4264
-$Comp
-L dw_symbols:SS49X U3
-U 1 1 60387741
-P 8554 3968
-F 0 "U3" H 8554 4219 50  0000 C CNN
-F 1 "SS49X" H 8554 4154 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92Flat" H 8554 3768 50  0001 C CNN
-F 3 "" H 8554 3968 50  0001 C CNN
-	1    8554 3968
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	6767 4264 7037 4264
 Connection ~ 7037 4264
@@ -603,27 +590,19 @@ F 3 "" H 3490 4064 50  0001 C CNN
 	1    3490 4064
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9136 3968 9289 3968
 $Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 605F8930
-P 9062 3662
-F 0 "JP1" H 9062 3867 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 9062 3776 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 9062 3662 50  0001 C CNN
-F 3 "~" H 9062 3662 50  0001 C CNN
-	1    9062 3662
-	1    0    0    -1  
+L dw_symbols:SS49X U3
+U 1 1 60387741
+P 8554 3968
+F 0 "U3" H 8554 4219 50  0000 C CNN
+F 1 "SS49X" H 8554 4154 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92Flat" H 8554 3768 50  0001 C CNN
+F 3 "" H 8554 3968 50  0001 C CNN
+	1    8554 3968
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	8912 3662 8912 3968
-Connection ~ 8912 3968
-Wire Wire Line
-	8912 3968 8936 3968
-Wire Wire Line
-	9136 3968 9212 3968
-Wire Wire Line
-	9212 3662 9212 3968
-Connection ~ 9212 3968
-Wire Wire Line
-	9212 3968 9289 3968
+	8904 3968 8936 3968
 $EndSCHEMATC
